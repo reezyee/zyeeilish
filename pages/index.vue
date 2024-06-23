@@ -4,9 +4,9 @@
             <div class="flex flex-col justify-center items-center content-center pt-72 lg:pb-0 md:pb-40 sm:pb-38 pb-48">
                 <!-- <p>WELCOME</p> -->
                 <p
-                    class="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500 lg:text-9xl md:text-8xl text-6xl">
+                    class="animate-text bg-clip-text text-transparent bg-gradient-to-r from-gray-800/30 via-green-600/80 to-gray-800/30 lg:text-9xl md:text-8xl text-6xl font-black">
                     ZYEEILISH
-                </p>
+                </p>    
                 <p>Bravo, you're proper Billie Eilish fans</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -52,38 +52,44 @@
                 </path>
             </svg>
             <p class="text-7xl text-center pb-5">Albums</p>
-            <div class="flex flex-wrap flex-row justify-center items-center content-center gap-10 pb-40 px-8">
+            <div class="flex flex-wrap flex-row justify-center items-center content-center gap-10 pb-40 px-8 animation-all duration-300 data-twe-animation-delay">
+                <!-- <div v-for="(album, i) in albums" :key="i" class=""> -->
                 <NuxtLink to="/hmhas/">
-                    <div class="w-64 relative group rounded-2xl shadow-lg shadow-blue-400/40">
-                        <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hmhas.jpg" class=" rounded-2xl group-hover:scale-105 duration-300"/>
+                    <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-slate-600/60">
+                        <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hmhas.jpg" class=" rounded-2xl group-hover:scale-105 duration-300" />
                         <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-blue-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-white ">
-                            Hit Me Hard And Soft</div>
+                            class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-zinc-100/10 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-white ">
+                            <p class="lg:text-xl md:text-lg sm:text-md text-sm">HIT ME HARD AND SOFT</p></div>
                     </div>
                 </NuxtLink>
-                <div class="w-64 relative group rounded-2xl shadow-lg shadow-green-400/40">
-                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/guitar.jpg" class=" rounded-2xl group-hover:scale-105 duration-300"/>
+                <!-- </div> -->
+                <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-green-400/40">
+                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/guitar.jpg"
+                        class=" rounded-2xl group-hover:scale-105 duration-300" />
                     <div
                         class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-green-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-white ">
-                        Guitar Songs</div>
+                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Guitar Songs</p></div>
                 </div>
-                <div class="w-64 relative group rounded-2xl shadow-lg shadow-orange-400/40">
-                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hte.jpg" class=" rounded-2xl group-hover:scale-105 duration-300"/>
+                <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-orange-400/40">
+                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hte.jpg"
+                        class=" rounded-2xl group-hover:scale-105 duration-300" />
                     <div
                         class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-orange-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-white ">
-                        Happier Than Ever</div>
+                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Happier Than Ever</p></div>
                 </div>
-                <div class="w-64 relative group rounded-2xl shadow-lg shadow-slate-400/40">
-                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/wwafa.jpg" class=" rounded-2xl group-hover:scale-105 duration-300"/>
+                <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-slate-400/40">
+                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/wwafa.jpg"
+                        class=" rounded-2xl group-hover:scale-105 duration-300" />
                     <div
                         class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-slate-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-l bg-black/30 text-white ">
-                        When We All Fall Asleep, Where Do We Go?</div>
+                       <p class="lg:text-xl md:text-lg sm:text-md text-sm">When We All Fall Asleep, Where Do We Go?</p></div>
                 </div>
-                <div class="w-64 relative group rounded-2xl shadow-lg shadow-yellow-400/40">
-                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/dsam.jpg" class=" rounded-2xl group-hover:scale-105 duration-300"/>
+                <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-yellow-400/40">
+                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/dsam.jpg"
+                        class=" rounded-2xl group-hover:scale-105 duration-300" />
                     <div
                         class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-yellow-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-white ">
-                        Don't Smile At Me</div>
+                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Don't Smile At Me</p></div>
                 </div>
             </div>
         </div>
@@ -93,14 +99,18 @@
 <script setup>
 // const supabase = useSupabaseClient()
 
-// const covers=([])
+// const albums = ref([])
 
-// async function getCover() {
-//     const {data, error} = await supabase.from('songs')
-//     .select('*')
-//     if (data) covers.value = data
-
+// async function getalbums() {
+//     const { data, error } = await supabase.from('albums')
+//         .select('*')
+//         .order('id')
+//     if (data) albums.value = data
 // }
+
+// onMounted(() => {
+//     getalbums()
+// })
 </script>
 
 <style scoped>
@@ -113,5 +123,4 @@
     background-image: url("@/assets/images/albums.jpg");
     /* height: 100vh; */
 }
-
 </style>

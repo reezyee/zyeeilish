@@ -1,8 +1,8 @@
 <template>
     <div class="songs pt-16 pb-[50px]">
-        <NuxtLink to="/hmhas/">
+        <NuxtLink to="/hmhas/" class="ms-10">
             <button type="button"
-                class=" ms-10 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 border rounded-lg gap-x-2 dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+                class="px-5 py-2 text-sm text-gray-700 transition-colors duration-200 border rounded-lg gap-x-2 dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
@@ -16,11 +16,11 @@
                 <img :src="songs?.cover" :alt="songs?.judul" class="w-96 shadow-md shadow-black rounded-xl">
                 <p class="text-3xl">{{ songs?.judul }}</p>
                 <p class="text-gray-200/40 text-x">{{ songs?.penyanyi }}</p>
-                <audio id="song" class="block w-full max-w-md mx-auto" controls>
-                    <source :src="songs?.lagu" type="audio/mp3">
-                </audio>
+                <!-- <audio id="song" class="block w-full max-w-md mx-auto" controls>
+                    <source :src="songs?.lagu" type="audio/mpeg">
+                </audio> -->
+                <audio :src="songs?.lagu" class="block w-full max-w-md mx-auto" type="audio/mpeg" controls></audio>
             </div>
-            <!-- <audio :src="songs?.lagu" class="bg-white"></audio> -->
             <div class="lyrics">
                 <div
                     class="card lg:w-[600px] lg:h-[520px] md:w-[400px] md:h-[520px] sm:h-[300px] h-[400px] bg-base-100 shadow-xl">

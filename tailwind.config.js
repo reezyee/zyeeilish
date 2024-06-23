@@ -9,7 +9,11 @@ module.exports = {
       "./error.vue",
     ],
     theme: {
-      extend: {},
+    extend: {
+      fontFamily: {
+        oswald : [ "Oswald", 'sans-serif'],
+      },
     },
+  },
     plugins: [require('daisyui')],
-  }
+}

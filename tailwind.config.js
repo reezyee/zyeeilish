@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         oswald : [ "Oswald", 'sans-serif'],
+        passion : ["Passion One", 'sans-serif']
       },
     },
   },

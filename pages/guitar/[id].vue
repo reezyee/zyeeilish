@@ -77,8 +77,4 @@ audio {
     margin: 0 auto;
     
 }
-
-audio::-webkit-media-controls-play-button{
-    /* box-shadow: 1px 1px 5px 1px #8d8d8d5e; */
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div class="songs pt-16 pb-[50px] bg-[linear-gradient(0deg,_#020812_55%,_#132740_100%)] font-oswald text-slate-100">
-        <NuxtLink to="/hmhas/" class="ms-10">
+    <div class="songs pt-16 pb-[50px] bg-[linear-gradient(0deg,_#131003_30%,_#624835_70%,_#886648_90%)] font-oswald text-slate-100">
+        <NuxtLink to="/hte/" class="ms-10">
             <button type="button"
                 class="px-5 py-2 text-sm text-gray-700 transition-colors duration-200 rounded-lg gap-x-2 dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100/10 dark:text-gray-200 shadow-sm shadow-black">
                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -19,7 +19,7 @@
                 <!-- <audio id="song" class="block w-full max-w-md mx-auto" controls>
                     <source :src="songs?.lagu" type="audio/mpeg">
                 </audio> -->
-                <audio :src="songs?.lagu" class="block w-full max-w-md mx-auto border-2 border-[#03172f] shadow-md shadow-black" type="audio/mpeg" controls></audio>
+                <audio :src="songs?.lagu" class="block w-full max-w-md mx-auto border-2 border-[#775840] shadow-md shadow-black" type="audio/mpeg" controls></audio>
             </div>
             <div class="lyrics">
                 <div
@@ -51,7 +51,7 @@ const route = useRoute()
 const songs = ref()
 
 async function getSongById() {
-    const { data, error } = await supabase.from('hmhas')
+    const { data, error } = await supabase.from('hte')
         .select(`*, albums(*)`)
         .eq('id', route.params.id)
         .maybeSingle()
@@ -66,7 +66,7 @@ onMounted(() => {
 <style scoped>
 audio::-webkit-media-controls-panel {
     /* background: linear-gradient(360deg, #080e15, #13355f); */
-    background-color: #03172f;
+    background-color: #775840;
     /* box-shadow: 1px 100px 4px 1px #13355f inset; */
 }
 
@@ -77,4 +77,5 @@ audio {
     margin: 0 auto;
     
 }
+
 </style>

@@ -6,7 +6,7 @@
                 <p
                     class="animate-text bg-clip-text text-transparent bg-gradient-to-r from-gray-700/10 via-green-500/70 to-gray-700/30 lg:text-9xl md:text-8xl text-6xl font-black lg:tracking-[-10.5px] md:tracking-[-8px] sm:tracking-[-5px] tracking-[-4.5px]">
                     ZYEEILISH
-                </p>    
+                </p>
                 <p class="text-slate-100/40 tracking-[4px] font-oswald">Bravo, you're proper Billie Eilish fans</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -15,12 +15,13 @@
                 </path>
             </svg>
         </div>
-        <div class="about">
+        <div id="about">
             <div
                 class="flex lg:flex-row md:flex-col flex-col justify-center items-center lg:py-32  md:py-16 sm:py-16 pt-10 px-10 gap-8 bg-[#303030] text-slate-100">
                 <div class="text grid lg:gap-10 gap-3 font-oswald">
                     <p class="text-center text-4xl font-extrabold">About</p>
-                    <p class="tracking-[1px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In deleniti iusto
+                    <p class="tracking-[1px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In deleniti
+                        iusto
                         consequuntur, nemo
                         labore, totam soluta doloremque laborum reprehenderit voluptatum, maiores nihil? Omnis dolorum
                         beatae, fugiat nam alias corporis consequuntur.</p>
@@ -31,69 +32,86 @@
                         class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0">
                             <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
-                                src="~/assets/images/d.jpg" alt="">
+                                src="~/assets/images/pf.jpeg" alt="">
                         </div>
                         <div
-                            class="absolute inset-0 h-ful w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                            <div class="flex flex-col mt-24 items-center content-center justify-center font-oswald tracking-[1px] ">
-                                <p>Billie Eilish</p>
-                                <p>21 Years Old</p>
-                                <p>Artists</p>
+                            class="absolute inset-0 h-ful w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div
+                                class="flex flex-col mt-24 items-center content-center justify-center font-oswald tracking-[1px] text-wrap gap-2">
+                                <p>Billie Eilish Pirate Baird O'Connell</p>
+                                <p>Singer ● Songwriter ● Actor</p>
+                                <p>December 18, 2001 (age 22) <br>
+                                    Los Angeles, California, U.S.</p>
+                                <a href="http://www.billieeilish.com" class="underline">billieeilish.com</a>
+                                <button class="px-5 py-2 text-sm text-gray-700 transition-colors duration-200 rounded-lg gap-x-2 dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100/10 dark:text-gray-200 shadow-sm shadow-black"><a href="https://en.wikipedia.org/wiki/Billie_Eilish">details</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="album bg-no-repeat bg-cover bg-fixed bg-center">
+        <div id="albums" class="albums bg-no-repeat bg-cover bg-fixed bg-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#303030" fill-opacity="1"
                     d="M0,96L18.5,80C36.9,64,74,32,111,53.3C147.7,75,115,110,222,110.7C300.5,120,255,170,332,128C369.2,110,406,64,443,64C480,64,517,96,554,128C590.8,160,628,92,665,91.3C701.5,91,738,117,775,90.7C812.3,64,849,64,886,90.7C923.1,117,960,171,997,117.3C1033.8,28,1071,124,1108,102.7C1144.6,81,1182,239,1218,162.7C1255.4,107,1292,157,1329,137.3C1366.2,111,1403,187,1422,191.3L3907,96L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
                 </path>
             </svg>
             <p class="text-5xl text-center pb-5 font-oswald font-black text-slate-100">Albums</p>
-            <div class="flex font-oswald flex-wrap flex-row justify-center items-center content-center gap-10 pb-40 px-8 animation-all duration-300 data-twe-animation-delay">
+            <div
+                class="flex font-oswald flex-wrap flex-row justify-center items-center content-center gap-10 pb-40 px-8 animation-all duration-300 data-twe-animation-delay">
                 <!-- <div v-for="(album, i) in albums" :key="i" class=""> -->
                 <NuxtLink to="/hmhas/">
                     <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-slate-600/60">
-                        <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hmhas.jpg" class=" rounded-2xl group-hover:scale-105 duration-300" />
+                        <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hmhas.jpg"
+                            class=" rounded-2xl group-hover:scale-105 duration-300" />
                         <div
                             class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-zinc-100/10 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-slate-200/70 ">
-                            <p class="lg:text-xl md:text-lg sm:text-md text-sm">HIT ME HARD AND SOFT</p></div>
+                            <p class="lg:text-xl md:text-lg sm:text-md text-sm">HIT ME HARD AND SOFT</p>
+                        </div>
                     </div>
                 </NuxtLink>
                 <!-- </div> -->
                 <NuxtLink to="/guitar/">
-                <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-green-400/40">
-                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/guitar.jpg"
-                        class=" rounded-2xl group-hover:scale-105 duration-300" />
-                    <div
-                        class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-green-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-slate-200/70">
-                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Guitar Songs</p></div>
-                </div>
+                    <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-green-400/40">
+                        <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/guitar.jpg"
+                            class=" rounded-2xl group-hover:scale-105 duration-300" />
+                        <div
+                            class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-green-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-slate-200/70">
+                            <p class="lg:text-xl md:text-lg sm:text-md text-sm">Guitar Songs</p>
+                        </div>
+                    </div>
                 </NuxtLink>
-                <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-orange-400/40">
-                    <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hte.jpg"
-                        class=" rounded-2xl group-hover:scale-105 duration-300" />
-                    <div
-                        class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-orange-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-slate-200/70">
-                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Happier Than Ever</p></div>
-                </div>
+                <NuxtLink to="/hte/">
+                    <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-orange-400/40">
+                        <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/hte.jpg"
+                            class=" rounded-2xl group-hover:scale-105 duration-300" />
+                        <div
+                            class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-orange-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-slate-200/70">
+                            <p class="lg:text-xl md:text-lg sm:text-md text-sm">Happier Than Ever</p>
+                        </div>
+                    </div>
+                </NuxtLink>
                 <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-slate-400/40">
                     <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/wwafa.jpg"
                         class=" rounded-2xl group-hover:scale-105 duration-300" />
                     <div
                         class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-slate-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-l bg-black/30 text-slate-200/70">
-                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">When We All Fall Asleep, Where Do We Go?</p></div>
+                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">When We All Fall Asleep, Where Do We Go?</p>
+                    </div>
                 </div>
                 <div class="lg:w-64 md:w-48 sm:w-38 w-28 relative group rounded-2xl shadow-lg shadow-yellow-400/40">
                     <img src="https://yfpzsnvyrqerpascezct.supabase.co/storage/v1/object/public/cover/dsam.jpg"
                         class=" rounded-2xl group-hover:scale-105 duration-300" />
                     <div
                         class="opacity-0 group-hover:opacity-100 group-hover:scale-105 duration-300 rounded-2xl shadow-lg shadow-yellow-400/40 absolute h-full w-full bottom-0 flex justify-center items-end text-xl bg-black/30 text-slate-200/70">
-                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Don't Smile At Me</p></div>
+                        <p class="lg:text-xl md:text-lg sm:text-md text-sm">Don't Smile At Me</p>
+                    </div>
                 </div>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#303030" fill-opacity="1" d="M0,256L14.1,250.7C28.2,245,56,235,85,234.7C112.9,235,141,245,169,240C197.6,235,226,213,254,197.3C282.4,181,311,171,339,181.3C367.1,192,395,224,424,224C451.8,224,480,192,508,186.7C536.5,181,565,203,593,213.3C621.2,224,649,224,678,202.7C705.9,181,734,139,762,138.7C790.6,139,819,181,847,181.3C875.3,181,904,139,932,117.3C960,96,988,96,1016,122.7C1044.7,149,1073,203,1101,213.3C1129.4,224,1158,192,1186,197.3C1214.1,203,1242,245,1271,245.3C1298.8,245,1327,203,1355,181.3C1383.5,160,1412,160,1426,160L1440,160L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path></svg>
+        </div>
+        <div id="photos" class="photos">
+            
         </div>
     </div>
 </template>
@@ -121,9 +139,8 @@
     /* height: 100vh; */
 }
 
-.album {
+.albums {
     background-image: url("@/assets/images/albums.jpg");
     /* height: 100vh; */
 }
-
 </style>

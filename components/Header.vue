@@ -10,10 +10,11 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-current shadow bg-transparent rounded-box w-52">
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-current shadow bg-transparent rounded-box w-52" >
                     <li><NuxtLink to="/"><a>Homepage</a></NuxtLink></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>About</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#albums">Albums</a></li>
+                    <li><a href="/#photos">Photos</a></li>
                 </ul>
             </div>
         </div>

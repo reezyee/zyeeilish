@@ -12,7 +12,9 @@ module.exports = {
     extend: {
       fontFamily: {
         oswald : [ "Oswald", 'sans-serif'],
-        passion : ["Passion One", 'sans-serif']
+        passion : ["Passion One", 'sans-serif'],
+        prompt : ["Prompt", 'sans-serif'],
+        playwrite : ["Playwrite AU NSW", 'cursive'],
       },
     },
   },

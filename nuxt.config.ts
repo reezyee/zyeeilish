@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   // modules: ['@nuxtjs/tailwindcss'],
-  // css: ["bootstrap/dist/css/bootstrap.min.css"],
+  // css: ["bootstrap/dist/css/bootstrap.min.css"]
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+      // scrollTo: true
+    }
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -17,4 +23,5 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false
   },
+
 })
